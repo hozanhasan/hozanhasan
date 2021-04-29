@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <title></title>
+  </head>
+  <script>
+    function myFunction() {
+      var luku;
+      var lause;
+      luku=Number(document.getElementById("lname1").value);
+      lause = luku + "x 1 = " + luku * 1 + "<br>";
+      lause += luku + "x 2 = " + luku * 2 + "<br>";
+      lause += luku + "x 3 = " + luku * 3 + "<br>";
+      lause += luku + "x 4 = " + luku * 4 + "<br>";
+      lause += luku + "x 5 = " + luku * 5 + "<br>";
+      lause += luku + "x 6 = " + luku * 6 + "<br>";
+      lause += luku + "x 7 = " + luku * 7 + "<br>";
+      lause += luku + "x 8 = " + luku * 8 + "<br>";
+      lause += luku + "x 9 = " + luku * 9 + "<br>";
+      lause += luku + "x 10 = " + luku * 10;
+      document.write(lause);
+    }
+  </script>
+  <body>
+
+  <input type="text" id="lname1" name="lname1"><br><br>
+
+  <input type="button" onclick=myFunction() value="Click Me!">
+  </body>
+  </html>

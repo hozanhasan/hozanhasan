@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <title></title>
+  </head>
+  <script>
+    function myFunction() {
+      var x;
+      x=document.getElementById("lname").value;
+      if(x==1) {
+      document.write("Maanantai");
+      }
+      else if(x==2){
+          document.write("Tiistai");
+      }
+      else if(x==3){
+          document.write("Keskviikko");
+      }
+      else if(x==4){
+          document.write("Torstai");
+      }
+      else if(x==5){
+          document.write("Perjantai");
+      }
+      else if(x==6){
+          document.write("Lauantai");
+      }
+      else {
+          document.write("Sunnuntai");
+      }
+    }
+  </script>
+  <body>
+
+  <input type="text" id="lname" name="lname">
+  <input type="button" onclick=myFunction() value="Click Me!">
+  </body>
+  </html>

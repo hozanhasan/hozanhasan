@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <title></title>
+  </head>
+  <script>
+    function myFunction() {
+      var x1,x2,x3,x4,x5;
+      var summa,keskiarvo;
+      var tulos;
+      x1=Number(document.getElementById("lname1").value);
+      x2=Number(document.getElementById("lname2").value);
+      x3=Number(document.getElementById("lname3").value);
+      x4=Number(document.getElementById("lname4").value);
+      x5=Number(document.getElementById("lname5").value);
+      summa =x1+x2+x3+x4+x5;
+      keskiarvo=summa/5;
+      tulos = "lukujen summa on: ";
+      tulos+=summa;
+      tulos+=" ja keskiarvo on: ";
+      tulos+=keskiarvo;
+      document.write(tulos);
+    }
+  </script>
+  <body>
+
+  <input type="text" id="lname1" name="lname1"><br>
+  <input type="text" id="lname2" name="lname2"><br>
+  <input type="text" id="lname3" name="lname3"><br>
+  <input type="text" id="lname4" name="lname4"><br>
+  <input type="text" id="lname5" name="lname5"><br><br>
+
+  <input type="button" onclick=myFunction() value="Click Me!">
+  </body>
+  </html>

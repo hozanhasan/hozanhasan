@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <title></title>
+  </head>
+  <script>
+    function myFunction() {
+      var x;
+      x=document.getElementById("lname").value;
+      if(isinteger(x/4)&&!isinteger(x%)) {
+      document.write("Vuosi on karkausvuosi");
+      }
+      else if(isinteger(x/400)){
+          document.write("Vuosi on karkausvuosi");
+      }
+      else {
+          document.write("Vuosi ei ole karkausvuosi");
+      }
+    }
+  </script>
+  <body>
+
+  <input type="text" id="lname" name="lname">
+  <input type="button" onclick=myFunction() value="Click Me!">
+  </body>
+  </html>
