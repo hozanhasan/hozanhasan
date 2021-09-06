@@ -1,39 +1,67 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-  <meta charset="utf-8">
-  <title></title>
-  </head>
-  <script>
-    function myFunction() {
-      var x;
-      x=document.getElementById("lname").value;
-      if(x==1) {
-      document.write("Maanantai");
-      }
-      else if(x==2){
-          document.write("Tiistai");
-      }
-      else if(x==3){
-          document.write("Keskviikko");
-      }
-      else if(x==4){
-          document.write("Torstai");
-      }
-      else if(x==5){
-          document.write("Perjantai");
-      }
-      else if(x==6){
-          document.write("Lauantai");
-      }
-      else {
-          document.write("Sunnuntai");
-      }
-    }
-  </script>
-  <body>
+<html>
+<head>
+<style>
+body {
+  background-color: orange;
+}
+</style>
+</head>
+<body>
+  <h1>Tehtävä 1</h1>
+  <label for="lname">Anna parillinen luku:</label>
+  <input type="text" id="lname" name="lname"></br></br>
+  <button onclick="parilliset()">ok!</button>
+  <h1>Tehtävä 2</h1>
+  <label for="sala">Anna salasana:</label>
+  <input type="text" id="sala" name="sala"></br></br>
+  <button onclick="salasanaksi()">Muuta salasanaksi!</button>
 
-  <input type="text" id="lname" name="lname">
-  <input type="button" onclick=myFunction() value="Click Me!">
-  </body>
-  </html>
+
+  <h2>tehtävä3</h2>
+  <label for="fname">anna sana:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <button type="button" onclick="onko()">onko ö!</button>
+  <h2>tehtävä4</h2>
+  <label for="laske">anna kokonaisluku</label>
+  <input type="text" id="laske" name="laske"><br><br>
+  <button type="button" onclick="laskee()">laske kertoma!</button>
+
+
+  <h1>Tehtävä 5</h1>
+  <button onclick="star()">tulosta!</button>
+  <h1>Tehtävä 6</h1>
+  <button onclick="ekat()">10 Ensimmäistä!</button>
+  <h1>Tehtävä 7</h1>
+  <button onclick="yhteen()">Laske 10 ens. yhteen!</button>
+  <h1>Tehtävä 8</h1>
+  <label for="luku1">Anna korotettava luku:</label>
+  <input type="text" id="luku1" name="luku1"></br></br>
+  <label for="luku2">Anna potenssiu:</label>
+  <input type="text" id="luku2" name="luku2"></br></br>
+  <button onclick="potenssiin()">Laske!</button>
+    <h1>Tehtävä 9</h1>
+  <label for="muu1">Anna 1. luku:</label>
+  <input type="text" id="muu1" name="muu1"></br></br>
+  <label for="muu2">Anna 2. luku:</label>
+  <input type="text" id="muu2" name="muu1"></br></br>
+  <label for="muu3">Anna 3. luku:</label>
+  <input type="text" id="muu3" name="muu3"></br></br>
+  <label for="muu4">Anna 4. luku:</label>
+  <input type="text" id="muu4" name="muu4"></br></br>
+  <label for="muu5">Anna 5. luku:</label>
+  <input type="text" id="muu5" name="muu5"></br></br>
+  <button onclick="supi()">Etsi suurin ja pienin!</button>
+  <h1>Tehtävä 10</h1>
+  <label for="sala2">Anna salasana:</label>
+  <input type="text" id="sala2" name="sala2">
+  <button onclick="arpoo()">Muunna salasanaksi!</button>
+    <h1>Tehtävä 11</h1>
+  <label for="muu6">Anna pienempi luku:</label>
+  <input type="text" id="muu6" name="muu6"></br></br>
+  <label for="muu7">Anna isompi luku:</label>
+  <input type="text" id="muu7" name="muu7"></br></br>
+  <button onclick="numerotSummat()">näytä parilliset ja parittomat erikseen sekä niiden summa!</button>
+  <script src="Harjoitus2.js"></script>
+</body>
+</html>
